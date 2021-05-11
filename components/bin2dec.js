@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import styles from '../styles/bin2dec.module.css'
 
 export default function bin2dec() {
 
@@ -28,17 +29,21 @@ export default function bin2dec() {
     }, [bin])
 
     return (
-        <form onChange={event => setBinario(event.target.value)}>
-            <label htmlFor="bin">
-                <span>Valor binário: </span>
-                <input type="number" name="bin" className="binario" min="0" />
-            </label>
-            <br />
-            <br />
-            <label htmlFor="dec">
-                <span>Valor decimal: </span>
-                <input name="dec" className="decimal" readOnly={true} value={dec} />
-            </label>
+
+        <form onChange={event => setBinario(event.target.value)} className={styles.conversorForm}>
+            <h2>Binário &rarr; Decimal</h2>
+            <div className={styles.inputs}>
+                <label htmlFor="bin" className={styles.input}>
+                    <span>Valor binário: </span>
+                    <input type="number" name="bin" className="binario" min="0" />
+                </label>
+
+                <label htmlFor="dec" className={styles.input}>
+                    <span>Valor decimal: </span>
+                    <input name="dec" className="decimal" readOnly={true} value={dec} />
+                </label>
+            </div>
         </form>
+
     )
 }

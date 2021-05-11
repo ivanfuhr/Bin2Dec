@@ -1,0 +1,42 @@
+.conversorForm{
+    width: 500px;
+    border-radius: 10px;
+    background: var(--white);
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    margin: 10px;
+}
+
+.conversorForm h2{
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    background: var(--purple);
+    border-radius: 10px 10px 0 0;
+}
+
+.inputs{
+    padding: 20px;
+}
+
+.input{
+    display: grid; 
+    margin-top: 10px;
+}
+
+.input input{
+    appearance: none;
+    height: 35px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #e8ebed;
+    color: #576366;
+    font-size: 14px;
+}
